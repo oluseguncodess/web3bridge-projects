@@ -31,6 +31,10 @@
       <img src="./images/icon-hamburger.svg" alt="hamburger-menu" class="h-full hamburger-image">
      </div>
 
+     <div class=" hidden h-3 w-8 md:hidden lg:hidden hamburger-icon close-icon">
+      <img src="./images/icon-close.svg" alt="close-icon" class="h-full">
+     </div>
+
       <ul class="sm:hidden flex gap-10">
         <li class="nav-links text-base text-greyish">Home</li>
         <li class="nav-links text-base text-greyish">About</li>
@@ -39,13 +43,23 @@
         <li class="nav-links text-base text-greyish">Careers</li>
       </ul>
 
+      <ul class=" hidden flex-col fixed top-24 right-0 h-2/5 w-90% z-10 bg-white left-0 mx-auto rounded-md justify-center items-center gap-8 md:hidden lg:hidden mobile-nav">
+
+       <a href="#home" class=""><li class="nav-links text-lg text-dark-blueish">Home</li></a> 
+       <a href="#about" class=""><li class="nav-links text-lg text-dark-blueish">About</li></a> 
+       <a href="#contact" class=""><li class="nav-links text-lg text-dark-blueish">Contact</li></a> 
+       <a href="#blog" class=""><li class="nav-links text-lg text-dark-blueish">Blog</li></a> 
+       <a href="#careers" class=""><li class="nav-links text-lg text-dark-blueish">Careers</li></a> 
+  
+      </ul>
+
       <button class="px-4 py-3 text-white bg-gradient-to-r from-greenish from-27% to-sky-blueish to-100% rounded-full min-w-36 box-content font-medium text-sm sm:hidden md:hidden">
         Request Invite
       </button>
     </nav>
   </header>
 
-  <main class="h-screen w-full">
+  <main class="h-screen w-full" id="home">
 
     <section class="hero bg-light-grey-grey w-full pb-24 lg:pb-0">
 
@@ -73,7 +87,7 @@
   
           <h1 class="text-center text-4xl md:text-md md:w-3/5 font-serif text-dark-blueish tracking-wide sm:max-w-360px">Next generation digital banking</h1>
   
-          <p class="sm:max-w-360px md:text-center md:max-w-450px mt-6 mx-auto text-base opacity-45">
+          <p class="sm:max-w-360px md:text-center lg:text-center md:max-w-450px mt-6 mx-auto text-base opacity-45">
             Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
           </p>
   
@@ -305,7 +319,6 @@
       </div>
 
     </footer>
-
     
   </main>
   <script src="./index.js"></script>
