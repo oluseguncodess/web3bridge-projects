@@ -877,6 +877,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1058,12 +1063,20 @@ video {
     width: 80%;
   }
 
+  .lg\:w-90\% {
+    width: 90%;
+  }
+
   .lg\:max-w-260px {
     max-width: 16.375rem;
   }
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:text-left {
