@@ -47,33 +47,40 @@
 
   <main class="h-screen w-full">
 
-    <section class="hero bg-light-grey-grey w-full pb-24">
+    <section class="hero bg-light-grey-grey w-full pb-24 lg:pb-0">
 
-      <div class="w-full h-450px relative mb-10">
+      <div class="lg:flex lg:w-full lg:justify-between">
 
-        <div class="bg-hero-bg bg-cover bg-no-repeat w-full bg-center h-full">
-          
+        <div class="w-full lg:w-1/2 h-450px relative mb-10 order-1">
+
+          <div class="bg-hero-bg bg-cover bg-no-repeat w-full bg-center h-full lg:hidden">
+            
+          </div>
+
+          <div class="bg-hero-desktop bg-cover bg-no-repeat w-full bg-center h-full hidden lg:inline-block">
+            
+          </div>
+  
+          <div class="w-90% h-full absolute top-0 mx-auto left-0 right-0 max-w-450px">
+            <img src="./images/image-mockups.png" alt="mockup-phone-images" class="w-full h-full">
+          </div>
+         
+  
         </div>
-
-        <div class="w-90% h-full absolute top-0 mx-auto left-0 right-0 max-w-450px">
-          <img src="./images/image-mockups.png" alt="mockup-phone-images" class="w-full h-full">
+      
+  
+        <div class="hero-text lg:w-4/12 flex flex-col w-90% mx-auto my-0 justify-center items-center mt-5">
+  
+          <h1 class="text-center text-4xl md:text-md md:w-3/5 font-serif text-dark-blueish tracking-wide sm:max-w-360px">Next generation digital banking</h1>
+  
+          <p class="sm:max-w-360px md:text-center md:max-w-450px mt-6 mx-auto text-base opacity-45">
+            Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+          </p>
+  
+          <button class="px-4 py-3 text-white bg-gradient-to-r from-greenish from-27% to-sky-blueish to-100% rounded-full w-36 box-content font-medium text-sm mt-9">
+            Request Invite
+          </button>
         </div>
-       
-
-      </div>
-    
-
-      <div class="hero-text flex flex-col w-90% mx-auto my-0 justify-center items-center mt-5">
-
-        <h1 class="text-center text-4xl md:text-md md:w-3/5 font-serif text-dark-blueish tracking-wide sm:max-w-360px">Next generation digital banking</h1>
-
-        <p class="sm:max-w-360px md:text-center md:max-w-450px mt-6 mx-auto text-base opacity-45">
-          Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
-        </p>
-
-        <button class="px-4 py-3 text-white bg-gradient-to-r from-greenish from-27% to-sky-blueish to-100% rounded-full w-36 box-content font-medium text-sm mt-9">
-          Request Invite
-        </button>
       </div>
 
     </section>

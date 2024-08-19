@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-bg': "url('./images/bg-intro-mobile.svg')",
+        'hero-desktop': "url('./images/bg-intro-desktop.svg')"
       },
       spacing: {
         '73': '4.5625rem'
