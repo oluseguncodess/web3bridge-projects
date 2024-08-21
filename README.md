@@ -1,8 +1,8 @@
 # EasyBank Landing Page
 
-This landing page a frontend mentor challenge. 
+This landing page is a frontend mentor challenge. 
 
-I create this landing page using the following;
+I created this landing page using the following;
 
 - html
 - css
@@ -10,3 +10,7 @@ I create this landing page using the following;
 - tailwindcss
 
 It is a fully responsive landing page!
+
+To view this, use the link below!
+
+[EasyBank landing page](https://web3bridge-projects.vercel.app/)
