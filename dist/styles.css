@@ -854,8 +854,23 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-rose-400 {
+  --tw-gradient-from: #fb7185 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(251 113 133 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-fuchsia-500 {
+  --tw-gradient-to: rgb(217 70 239 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #d946ef var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .to-sky-blueish {
   --tw-gradient-to: rgba(43,183,218,1) var(--tw-gradient-to-position);
+}
+
+.to-indigo-500 {
+  --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
 }
 
 .to-100\% {
@@ -866,8 +881,20 @@ video {
   background-size: cover;
 }
 
+.bg-\[length\:100\%_6px\] {
+  background-size: 100% 6px;
+}
+
+.bg-\[length\:100\%_4px\] {
+  background-size: 100% 4px;
+}
+
 .bg-center {
   background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-no-repeat {
@@ -922,6 +949,14 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -964,6 +999,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -990,6 +1030,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-greyish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(233 8% 62% / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1000,6 +1045,35 @@ video {
 
 .opacity-45 {
   opacity: 0.45;
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:bg-gradient-to-r:hover {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.hover\:bg-\[length\:100\%_6px\]:hover {
+  background-size: 100% 6px;
+}
+
+.hover\:bg-bottom:hover {
+  background-position: bottom;
+}
+
+.hover\:bg-no-repeat:hover {
+  background-repeat: no-repeat;
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (max-width: 640px) {
@@ -1129,6 +1203,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-360px {
+    width: 22.5rem;
   }
 
   .lg\:max-w-260px {
